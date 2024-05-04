@@ -6,5 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 8000
+  },
+  build: {
+    rollupOptions: {
+      external: ['src/main.jsx']
+    }
   }
 })
+
